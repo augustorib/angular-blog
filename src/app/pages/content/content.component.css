@@ -27,3 +27,14 @@
   margin-top: 20px;
   color: rgb(198, 197, 197);
 }
+
+.content__button > button{
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  background-color: rgb(1, 1, 180);
+  border: 2px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
