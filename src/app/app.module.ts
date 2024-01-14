@@ -12,6 +12,7 @@ import { ContentComponent } from './pages/content/content.component';
 import { MovieScreenComponent } from './components/movie-screen/movie-screen.component';
 import { TrailerComponent } from './pages/trailer/trailer.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { CommentsAreaComponent } from './components/comments-area/comments-area.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     HomeComponent,
     ContentComponent,
     MovieScreenComponent,
-    TrailerComponent
+    TrailerComponent,
+    CommentsAreaComponent
   ],
   imports: [
     BrowserModule,

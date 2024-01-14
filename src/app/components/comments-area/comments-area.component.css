@@ -1,0 +1,30 @@
+.container__comments-area {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comments-area__img > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.comments-area__comment > p{
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+
+.comments-area__timePast {
+    align-self: flex-start;
+}
+
+.comments-area__timePast > p {
+    font-size: 12px;
+    color: darkgrey;
+
+}
