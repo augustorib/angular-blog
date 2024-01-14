@@ -1,3 +1,9 @@
-p {
-    border: 20px solid green ;
+.container__movie-screen {
+    border: 10px solid grey ;
+    margin-top: 25px;
+}
+
+.movie-screen__movie {
+    display: flex;
+    justify-content: center;
 }
