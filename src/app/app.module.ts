@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { MovieScreenComponent } from './components/movie-screen/movie-screen.component';
 import { TrailerComponent } from './pages/trailer/trailer.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TrailerComponent } from './pages/trailer/trailer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
