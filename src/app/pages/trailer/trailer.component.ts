@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { dataFake } from 'src/app/data/dataFake';
 
 @Component({
   selector: 'app-trailer',
@@ -8,24 +9,27 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TrailerComponent implements OnInit {
   
-  @Input()
-  id: string | null = "0"
-
+  id: string | null  = "0"
+  movieId: string = ""
+ 
   constructor(
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe( value =>
       this.id = value.get("id"))
 
-      console.log(this.route)
-      //this.movieIdTest(this.id)
-
+      
+      this.getMovieId(this.id)
   }
 
 
-    movieIdTest(id: string | null){
-    console.log(id)
+    getMovieId(id:string | null){
+    
+      const result = dataFake.filter( value => value.id ==  id)[0]
+
+       this.movieId = result.movieId
+
   }
 }
