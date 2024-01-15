@@ -1,9 +1,14 @@
 <div class="container__trailer">
     <app-movie-screen></app-movie-screen>
-    <div>
-        <app-comments-area></app-comments-area>
-    </div>
-    <p>trailer works! {{id}}</p>
+
+    <div *ngFor="let c of comments">
+        <app-comments-area 
+            comment="{{c.comment}}"
+            profileImg="{{c.profileImg}}"
+            commentPassedTime="{{c.commentPassedTime}}"
+        ></app-comments-area>
+    </div> 
+
     <a [routerLink]="['']"> << VOLTAR </a>
 </div>
 
