@@ -1,4 +1,22 @@
 .container__trailer{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.trailer__buttons-area {
+    height: 100px;
+    text-align: center;
+}
+
+.trailer__buttons-area > button  {
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    background-color: rgb(1, 1, 180);
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
 }
