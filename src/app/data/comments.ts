@@ -28,4 +28,11 @@ export const comments = [
       "comment": "my film was better than that, cheers! kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
       "commentPassedTime": "3 month"
     },
+    {
+      "id":"4",
+      "movieId" : "wL4a4MafSjQ",
+      "profileImg": "https://veja.abril.com.br/wp-content/uploads/2018/02/blogib_pantera-negra_feat.jpg?quality=90&strip=info&w=1024&resize=1200,800",
+      "comment": "wakanda forever!",
+      "commentPassedTime": "1 year"
+    },
   ]
