@@ -1,22 +1,31 @@
 .container__comments-area {
     display: flex;
     width: 100%;
-    margin-top: 5px;
+    height: 180px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 1px solid grey;
 }
+
 
 .comments-area__img > img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 3px solid rgb(177, 177, 177);
+    margin-left: 10px
 
+}
+
+.comments-area__comment{
+    width: 700px;
+    word-wrap: break-word;
+    overflow: auto;
 }
 
 .comments-area__comment > p{
     font-size: 18px;
     color: whitesmoke;
-
 }
 
 .comments-area__timePast {
@@ -26,5 +35,7 @@
 .comments-area__timePast > p {
     font-size: 12px;
     color: darkgrey;
+    margin-right: 10px;
+    margin-top: 5px;
 
 }

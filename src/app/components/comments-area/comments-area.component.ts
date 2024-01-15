@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { comments } from 'src/app/data/comments';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -9,14 +9,19 @@ import { comments } from 'src/app/data/comments';
 })
 export class CommentsAreaComponent implements OnInit {
 
+  @Input()
   profileImg: string = "";
+
+  @Input()
   comment: string = ""
+
+  @Input()
+  commentPassedTime: string = ""
 
   constructor() { }
 
   ngOnInit(): void {
-    this.profileImg = comments[0].profileImg
-    this.comment = comments[0].comment
+
   }
 
 }
